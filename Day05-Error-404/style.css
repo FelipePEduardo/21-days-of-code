@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: hsla(0, 0%, 20%, 1);
+  --white: #fff;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-size: 1.6rem;
+
+  color: var(--primary-color);
+}
+
+h2 {
+  font-family: 'Inconsolata', monospace;
+}
+
+h1, p, button {
+  font-family: 'Space Mono', monospace;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 35rem;
+  height: 100%;
+
+  padding: 2rem 2.4rem;
+}
+
+header {
+  margin-bottom: 6.4rem;
+}
+
+header h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+
+main .image {
+  width: 28.6rem;
+  height: 23.8rem;
+
+  margin-bottom: 6rem;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 4.3rem;
+  letter-spacing: -0.035em;
+
+  margin-bottom: 3rem;
+}
+
+main p {
+  font-size: 1.8rem;
+
+  margin-bottom: 6.6rem;
+}
+
+main button { 
+  padding: 2.4rem 4.3rem;
+  margin-bottom: 11.4rem;
+  border: none;
+  
+  background: var(--primary-color);
+  color: var(--white);
+  
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+main button:hover{
+  opacity: 0.9;
+} 
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  color: var(--primary-color);
+
+  transition: 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.9;
+}
+
+footer a strong {
+  text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    margin-bottom: 20rem;
+  }
+
+  main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 11.8rem;
+
+    margin-bottom: 30.8rem;
+  }
+
+  main .content {
+    width: 58.6rem;
+  }
+  
+  main .image {
+    width: 53.9rem;
+    height: 44.7rem; 
+
+    margin-bottom: 0;
+  }
+
+  main h1 {
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 9.5rem;
+    letter-spacing: -0.035em;
+
+    margin-bottom: 3.6rem;
+  }
+
+  main p {
+    margin-bottom: 6.4rem;
+  }
+  
+  main button {
+    margin-bottom: 0;
+  }
+
+  main p {
+    width: 31.8rem;
+  }
+}

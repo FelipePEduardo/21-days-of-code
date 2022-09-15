@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --white: white;
+  --black: black;
+
+  --bg-body: #111;
+  --bg-input: #333;
+  --bg-icons: #999;
+}
+
+body {
+  min-height: 100vh;
+
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-body);
+}
+
+body * {
+  font-family: 'Poppins', sans-serif;
+}
+
+a, p {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+
+  color: var(--white);
+}
+
+a:hover, p:hover {
+  opacity: .7;
+}
+
+main {
+  width: 40rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+label {
+  margin-bottom: 2rem;
+}
+
+.content {
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--bg-input);
+
+  border-radius: 40px;
+  padding: .5rem;
+}
+
+.icons {
+  width: 50px;
+  height: 40px;
+
+  background: var(--bg-icons);
+  border-radius: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons img {
+  width: 2.5rem;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  background-color: transparent;
+
+  font-weight: bold;
+  color: var(--white);
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder {
+  color: var(--bg-icons);
+
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border: none;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 5rem;
+
+  border-radius: 40px;
+
+  background-color: var(--bg-icons);
+
+  cursor: pointer;
+
+  font-weight: bold;
+  color: var(--black);
+  text-transform: uppercase;
+
+  margin-bottom: 1rem;
+}
+
+input[type="submit"]:hover {
+  filter: brightness(1.2);
+} 
+
+.access {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-inline: 2rem;
+}
+
+.remind-password-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  position: relative;
+}

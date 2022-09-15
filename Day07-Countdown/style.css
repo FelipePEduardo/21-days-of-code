@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+
+  background: linear-gradient(45deg, #333, #999);
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.countdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text {
+  font-size: 10rem;
+  line-height: 1;
+  margin: 1rem 2rem;
+}
+
+.countdown-el {
+  text-align: center;
+}
+
