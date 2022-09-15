@@ -55,14 +55,23 @@ body {
   color: var(--previous-op);
   padding: .3rem;
   overflow-wrap: break-word;
+<<<<<<< HEAD
   min-height: 1.8rem;
+=======
+  min-height: 1.6rem;
+>>>>>>> 176646f0bd60d87c63a10733530508c842d11810
 
   font-size: 1.8rem;
 }
 
 #current-operation {
+<<<<<<< HEAD
   min-height: 1.8em;
   font-size: 5rem;
+=======
+  min-height: 1.6em;
+  font-size: 5.5rem;
+>>>>>>> 176646f0bd60d87c63a10733530508c842d11810
   font-weight: 700;
   padding: 0.3rem;
   overflow-wrap: break-word;
