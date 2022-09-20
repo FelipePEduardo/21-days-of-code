@@ -16,10 +16,10 @@ Desafio proposto pela [Rocketseat](http://rocketseat.com.br). Codar pelo menos 1
 <li>Desenvolva um toggle que altere o tema para claro e escuro. <a href="https://felipepeduardo.github.io/21-days-of-code/Day08-Toggle-Button">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Desenvolva uma animaçãos de loading. <a href="https://felipepeduardo.github.io/21-days-of-code/Day09-Loading-Animation">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Utilize a lib particle.js <a href="https://felipepeduardo.github.io/21-days-of-code/Day10-Lib-Particle.js">VEJA O DESAFIO CONCLUÍDO</a></li>
-<li>Desenvolva um layout de formulário de login.</li>
-<li>Desenvolva uma galeria de imagens</li>
-<li>Desenvolva um menu responsivo</li>
-<li>Crie um formulário de quizzes</li>
+<li>Desenvolva um layout de formulário de login. <a href="https://felipepeduardo.github.io/21-days-of-code/Day11-Login-Form">VEJA O DESAFIO CONCLUÍDO</a></li>
+<li>Desenvolva uma galeria de imagens <a href="https://felipepeduardo.github.io/21-days-of-code/Day12-Photo-Gallery">VEJA O DESAFIO CONCLUÍDO</a></li>
+<li>Desenvolva um menu responsivo <a href="https://felipepeduardo.github.io/21-days-of-code/Day13-Responsive-Menu">VEJA O DESAFIO CONCLUÍDO</a></li>
+<li>Crie um formulário de quizzes <a href="https://felipepeduardo.github.io/21-days-of-code/Day14-Quiz">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Desenvolva um site que exiba uma vitrine de produtos e um e-commerce ficticio (com nome dos produtos, preços e imagens)</li>
 <li>Desenvolva um site utilizando alguma API pública</li>
 <li>Desenvolva um site que capture os eventos o teclado  exiba na tela o evento e a tecla pressionada</li>
