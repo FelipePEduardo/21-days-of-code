@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon"  href="https://raw.githubusercontent.com/manualdodev/pokedex/main/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Pokédex</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img src="" alt="pokemon" class="pokemon-image">
+
+      <h1 class="pokemon-data">
+        <span class="pokemon-number"></span> - <span class="pokemon-name"></span>
+      </h1>
+
+      <form class="form">
+        <input 
+          type="search"
+          class="input-search"
+          placeholder="Name or Number"
+          required
+        />
+      </form>
+
+      <div class="buttons">
+        <button class="button btn-prev">Prev &lt;</button>
+        <button class="button btn-next">Next &gt;</button>
+      </div>
+
+      <img 
+        src="https://raw.githubusercontent.com/manualdodev/pokedex/main/images/pokedex.png" 
+        alt="Imagem de uma pokedex"
+        class="pokedex"
+      >
+    </main>
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
