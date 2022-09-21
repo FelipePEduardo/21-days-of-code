@@ -1,10 +1,13 @@
 # 21 Dias De Codigo
+
 Desafio proposto pela [Rocketseat](http://rocketseat.com.br). Codar pelo menos 1 hora por dia durante 21 dias e concluir desafios diários.
 <br>
 [POST DO DESAFIO](https://www.instagram.com/p/ChTBg1BpLGU/)
 <br>
 <br>
+
 ## Desafios:
+
 <ol>
 <li>Crie um repositório para listar os projetos que serão desenvolvidos durante os 21 dias de código. <a href="https://github.com/FelipePEduardo/21-days-of-code">VEJA  O VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Faça um Hello World customizado com fontes, cores e imagens. <a href="https://felipepeduardo.github.io/21-days-of-code/Day02-Hello-Word">VEJA O DESAFIO         CONCLUÍDO</a></li>
@@ -21,7 +24,7 @@ Desafio proposto pela [Rocketseat](http://rocketseat.com.br). Codar pelo menos 1
 <li>Desenvolva um menu responsivo <a href="https://felipepeduardo.github.io/21-days-of-code/Day13-Responsive-Menu">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Crie um formulário de quizzes <a href="https://felipepeduardo.github.io/21-days-of-code/Day14-Quiz">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Desenvolva um site que exiba uma vitrine de produtos e um e-commerce ficticio (com nome dos produtos, preços e imagens) <a href="https://felipepeduardo.github.io/21-days-of-code/Day15-E-commerce">VEJA O DESAFIO CONCLUÍDO</a></li>
-<li>Desenvolva um site utilizando alguma API pública</li>
+<li>Desenvolva um site utilizando alguma API pública <a href="https://felipepeduardo.github.io/21-days-of-code/Day16-API-Publica">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Desenvolva um site que capture os eventos o teclado  exiba na tela o evento e a tecla pressionada</li>      
 <li>Desenvolva um gerador de senhas aleatórias </li>
 <li>Desenvolva um site gere imagens aleatórias utilizando a API do Unsplash</li>
