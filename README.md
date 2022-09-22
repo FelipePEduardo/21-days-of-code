@@ -25,7 +25,7 @@ Desafio proposto pela [Rocketseat](http://rocketseat.com.br). Codar pelo menos 1
 <li>Crie um formulário de quizzes <a href="https://felipepeduardo.github.io/21-days-of-code/Day14-Quiz">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Desenvolva um site que exiba uma vitrine de produtos e um e-commerce ficticio (com nome dos produtos, preços e imagens) <a href="https://felipepeduardo.github.io/21-days-of-code/Day15-E-commerce">VEJA O DESAFIO CONCLUÍDO</a></li>
 <li>Desenvolva um site utilizando alguma API pública <a href="https://felipepeduardo.github.io/21-days-of-code/Day16-API-Publica">VEJA O DESAFIO CONCLUÍDO</a></li>
-<li>Desenvolva um site que capture os eventos o teclado  exiba na tela o evento e a tecla pressionada</li>      
+<li>Desenvolva um site que capture os eventos o teclado  exiba na tela o evento e a tecla pressionada <a href="https://felipepeduardo.github.io/21-days-of-code/Day17-Event-Keys">VEJA O DESAFIO CONCLUÍDO</a></li>      
 <li>Desenvolva um gerador de senhas aleatórias </li>
 <li>Desenvolva um site gere imagens aleatórias utilizando a API do Unsplash</li>
 <li>Desenvolva um site  emoji picker. Ao selecionar o emoji, é copiado para a área de transferência</li>
