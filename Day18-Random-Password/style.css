@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+
+  background: rgb(14, 14, 14);
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background: #999;
+  padding: 5rem;
+
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+main h1 {
+  color: white;
+
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+main button {
+  font-weight:bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+
+  width: clamp(13rem,10vw,20rem);
+  padding: 1.5rem;
+
+  border: none;
+  border-radius: 4px;
+
+  color: whitesmoke;
+  background: #8257e6;
+
+  cursor: pointer;
+}
+
+main button:hover {
+  opacity: .8;
+  transition: all .3s;
+}
+
+main .password {
+  width: 19rem;
+
+  padding: 1rem;
+  margin: 0 auto;
+
+  border: none;
+  border-radius: 5px;
+
+  background: whitesmoke;
+}
+
+@media (max-width: 400px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
