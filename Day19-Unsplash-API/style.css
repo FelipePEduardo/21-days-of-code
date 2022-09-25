@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  background-color: #999;
+
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 90%;  
+
+  margin: 5rem auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  animation: fromTop .7s;
+}
+
+header h1 {
+  color: #111;
+}
+
+header .search {
+  width: 80%;
+  max-width: 50rem;
+
+  color: #111;
+  transition: .3s;
+}
+
+input {
+  width: 100%;
+  padding: 1rem 2rem;
+  
+  outline: none;
+  border: .1rem solid #111;
+  border-radius: 2rem;
+  
+  color: #111;
+}
+
+input:focus {
+  border: 1px solid purple;
+  box-shadow: 0 0 2px purple;
+}
+
+main {
+  width: 90%;
+  max-width: 100rem;
+  padding-block: 3rem;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+main .grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+main img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+
+  background-size: cover;
+  border-radius: .5rem;
+}
+
+@media (max-width: 960px) {
+  header {
+    align-items: center;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  main .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main .grid img {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    align-items: center;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+
+  main .grid {
+    grid-template-columns: 1fr;
+  }
+
+  main .grid img {
+    height: 40rem;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
