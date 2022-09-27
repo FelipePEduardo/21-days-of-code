@@ -1,0 +1,612 @@
+/* ========= GERAL ================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-body: hsl(0, 0%, 9%);
+  --bg-gray: hsl(0, 0%, 11%);
+  --bg-menu: hsl(0, 0%, 20%);
+
+  --bg-menu-light-mode: hsl(0, 0%, 48%);
+  --bg-body-light-mode: rgb(227, 227, 227);
+  --bg-gray-light-mode: rgb(219, 219, 219);
+
+  --purple: hsl(258, 73%, 62%);
+  
+  --white: hsla(0, 0%, 100%, 1);
+  --black: hsl(0, 0%, 0%);
+
+  --text-color-light-mode: hsl(0, 0%, 13%);
+}
+
+body {
+  min-height: 100vh;
+
+  font-size: 1.6rem;
+  background: var(--bg-body);
+  color: var(--white);
+  transition: all .3s;
+}
+
+body * {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+section {
+  padding: 8rem 2rem;
+}
+
+button:disabled {
+  opacity: .3;
+}
+
+
+/* ========= NAVIGATION ================ */
+nav {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--bg-menu);
+
+  padding: 2rem;
+
+  position: fixed;
+  top: 0;
+
+  transition: background .3s;
+}
+
+nav > a {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+nav button {
+  border: none;
+  background: none;
+}
+
+nav .menu-mobile {
+  position: relative;
+}
+
+nav .open-menu {
+  width: 20rem;
+
+  padding: 2rem;
+
+  position: absolute;
+  right: 0;
+  background: var(--bg-menu);
+  border-radius: 3px;
+}
+
+nav .open-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: var(--white);
+  animation: topdown 300ms;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid var(--white);
+  animation: topdown 300ms;
+}
+
+/* ========= MAIN INITIAL-CONTENT ================ */
+main {
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+#initial-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  margin-top: 10rem;
+}
+
+#initial-content .profile-image {
+  width: 25rem;
+  height: 25rem;
+
+  padding: 1.5rem;
+  margin: 0 auto 2rem;
+
+  background: var(--bg-gray);
+  border-radius: 50%;
+
+  animation: toRight 300ms;
+}
+
+#initial-content .profile-image img {
+  width: 100%;
+
+  border-radius: 50%;
+}
+
+#initial-content .apresentation {
+  animation: toLeft 300ms;
+}
+
+#initial-content .apresentation h1 {
+  margin-bottom: 1rem;
+}
+
+#initial-content .apresentation p.role {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#initial-content button.resume {
+  font-weight: 500;
+  color: var(--purple);
+  background: transparent;
+
+  padding: 1.2rem 2.7rem;
+  
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+
+  transition: .3s;
+
+  margin-bottom: 3rem;
+}
+
+#initial-content button.resume:hover {
+  background: var(--purple);
+  color: var(--white);
+}
+
+#initial-content .buttons-theme button {
+  background: none;
+  border: none;
+}
+
+#initial-content .buttons-theme button svg {
+  fill: var(--white);
+  transition: all .3s;
+}
+
+#initial-content .buttons-theme button:hover svg {
+  fill: var(--purple);
+}
+
+/* ========= MAIN ABOUT-ME ================ */
+#about-me {
+  width: 100%;
+
+  text-align: start;
+  margin-bottom: 3rem;
+
+  background-color: #191919;
+}
+
+#about-me div {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+#about-me h2 span {
+  color: var(--purple);
+}
+
+#about-me p {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+
+  margin: 0 auto;
+}
+
+#about-me p span {
+  color: var(--purple);
+}
+
+/* ========= MAIN CONTACT ================ */
+#contact {
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 2rem;
+  padding-block: 10rem;
+}
+
+#contact .social-medias {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+#contact .social-medias ul {
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact .social-medias button {
+  display: flex;
+
+  line-height: 1.2;
+  padding: 2rem 2rem;
+
+  background: var(--white);
+  outline: 1px solid var(--purple);
+
+  border: none;
+  border-radius: 50%;
+
+  transition: .3s;
+}
+
+#contact .social-medias button:hover {
+  transform: scale(1.1);
+}
+
+/* ========= MAIN HARD=SKILLS ================ */
+#hard-skills {
+  width: 100%;
+
+  background-color: var(--bg-gray);
+
+  margin-bottom: 5rem;
+}
+
+#hard-skills h2 {
+  text-align: center;
+}
+
+#hard-skills h2 span {
+  color: var(--purple);
+}
+
+#hard-skills .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#hard-skills .skill {
+  width: 45%;
+  min-width: 12rem;
+
+  font-weight: 900;
+  text-align: center;
+
+  padding: 1.5rem;
+
+  text-transform: uppercase;
+
+  color: var(--black);
+  background: var(--white);
+  border-radius: 8px;
+  transition: .3s;
+}
+
+#hard-skills .skill:hover {
+  background: var(--purple);
+}
+
+/* ========= MAIN PROJECTS ================ */
+#projects {
+  width: 100%;
+
+  margin-bottom: 5rem;
+}
+
+#projects h2 {
+  text-align: center;
+}
+
+#projects .cards-projects {
+  display: flex;
+  gap: 5rem;
+
+  flex-wrap: wrap;
+}
+
+#projects .card {
+  width: 32rem;
+  min-height: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background: #222222;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px var(--white), 4px 4px 5px var(--black);
+
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+#projects .card img {
+  width: 100%;
+  height: 10rem;
+
+  border-radius: 5px;
+
+  margin-bottom: 1.5rem;
+}
+
+#projects .card h4{
+  font-size: 3rem;
+
+  color: var(--purple);
+
+  margin-bottom: 2rem;
+}
+
+#projects .card p {
+  font-size: 1.8rem;
+
+  margin-bottom: 2rem;
+}
+
+#projects .card .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#projects .card .buttons button {
+  width: 100%;
+
+  padding: 1rem;
+
+  color: var(--purple);
+  background: none;
+
+  border: none;
+  border-radius: 5px;
+
+  transition: .3s;
+}
+
+#projects .card .buttons button:hover {
+  transform: scale(1.1);
+}
+
+#projects .card .buttons button.view {
+  color: var(--white);
+  background: var(--purple);
+}
+
+#projects .card .buttons button.repository {
+  border: 1px solid var(--purple);
+}
+
+/* ========== FOOTER ============= */
+footer {
+  text-align: center;
+
+  margin-bottom: 5rem;
+}
+
+footer:hover {
+  animation: rotate 300ms;
+}
+
+footer p a {
+  color: var(--purple);
+}
+
+/* ========== LIGHT MODE ============= */
+body.light {
+  background: var(--bg-body-light-mode);
+  color: var(--text-color-light-mode);
+  transition: all .3s;
+}
+
+body.light nav {
+  background: var(--bg-menu-light-mode);
+  transition: background .3s;
+}
+
+body.light nav > a {
+  color: var(--white);
+}
+
+body.light .svgs svg path{
+  fill: var(--black);
+}
+
+body.light nav .open-menu ul li a {
+  color: var(--white);
+}
+
+body.light nav .open-menu {
+  background: var(--bg-menu-light-mode);
+}
+
+body.light #initial-content .buttons-theme button svg  {
+  fill: var(--black);
+}
+
+body.light #initial-content .buttons-theme button:hover svg {
+  fill: var(--purple);
+}
+
+body.light #initial-content .profile-image {
+  background: var(--bg-gray-light-mode);
+}
+
+body.light #about-me, body.light #hard-skills {
+  background: var(--bg-gray-light-mode);
+}
+
+body.light #hard-skills .skill:hover {
+  background: var(--black);
+  color: var(--white);
+  opacity: 1;
+}
+
+body.light #projects .card {
+  background: var(--bg-gray-light-mode);
+
+  box-shadow: 3px 3px 5px var(--black);
+}
+
+
+/* ========== MEDIA ============= */
+@media(min-width: 768px) {
+  nav .open-menu {
+    display: none;
+  }
+
+  nav .menu-mobile {
+    display: none;
+  }
+
+  nav .menu-desktop {
+    display: block;
+  }
+
+  nav .menu-desktop ul {
+    display: flex;
+    gap: 2rem;
+
+    font-size: 2rem;
+  }
+
+  main {
+    margin-top: 17rem;
+  }
+
+  #initial-content {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  #initial-content .profile-image {
+    margin: 0;
+  }
+  
+  #initial-content .profile-image img {
+    width: 100%;
+  
+    border-radius: 50%;
+  }
+
+  #initial-content .apresentation h1 {
+    font-size: 5rem;
+  }
+
+  #about-me p {
+    max-width: 103rem;
+  }
+
+  #contact .social-medias ul {
+    width: 90%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  #hard-skills .skill {
+    width: 30%;
+  }
+}
+
+/* ========== KEYFRAMES ============= */
+@keyframes toRight {
+  0%{
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes toLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
